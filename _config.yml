@@ -15,12 +15,14 @@ github_username:  herbal3d
 # gaaccount: 'UA-11111111-1'
 
 permalink: /:year/:year-:month-:day-:title
+pageinate: 5
 
-highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+highlighter: rogue
+markdown: karmdown
+gems:
+    - jekyll-paginate
 encoding: utf-8
+
+excerpt_separator: <!-- more -->
 
 exclude: ['README.md', 'LICENSE']
-encoding: utf-8

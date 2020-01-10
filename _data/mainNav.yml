@@ -1,0 +1,42 @@
+# Main/page top navigation menu
+# Read by '_layout/default.html' to build the menu bar at the top of the page
+
+- name: home
+  label: Home
+  url: "/"
+
+- name: architecture
+  label: Architecture
+  url: "/architecture/"
+  submenu: 
+    - name: overview
+      label: Overview
+      url: "/architecture/"
+
+    - name: spaceManager
+      label: Space Manager
+      url: "/architecture/SpaceManager.html"
+
+    - name: sessionManager
+      label: Session Manager
+      url: "/architecture/SessionManager.html"
+
+    - name: basilRenderer
+      label: BasilRenderer
+      url: "/architecture/Basil.html"
+
+- name: progress
+  label: Progress
+  url: "/progress/"
+
+- name: operation
+  label: "Operation"
+  url: "/operation/"
+
+- name: about
+  label: About
+  url: "/About.html"
+
+- name: rss
+  labal: RSS
+  url: "/feed.xml"

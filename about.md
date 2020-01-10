@@ -2,14 +2,19 @@
 layout: page
 title: About
 permalink: /about/
+navigation: about
 ---
+Herbal3d started as a personal experimental project to build a virtual world
+viewer using WebGL. That was so long ago that I had to write my own WebSocket
+drivers.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+This grew into thinking about what a next generation viewer might look like.
+Out of this grew the Basil project along with its family of modules.
+The goal is to create a scalable, plugable, extensable viewer that is not
+monolithic. I hope to add security and extensibility using the latest
+Internet technologies.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+Started in 2015 by [Robert Adams], the Herbal3d project will hopefully grow
+into a large open source project.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+[Robert Adams]: http://misterblue.com/

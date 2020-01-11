@@ -17,7 +17,7 @@ github_username:  herbal3d
 permalink: /:year/:year-:month-:day-:title
 pageinate: 5
 
-highlighter: rogue
+highlighter: rouge
 markdown: karmdown
 gems:
     - jekyll-paginate

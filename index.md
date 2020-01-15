@@ -1,9 +1,11 @@
---
+---
 layout: default
 title: "Herbal3D: Virtual World Viewer Infrastructure"
 ---
 > "What brings you here, my child?"
+>
 > The scamp points and asks, "What is that?"
+>
 > "Ah. Curiosity. The best reason."
 
 Herbal3d is an umbrella project for the building of a virtual world
@@ -33,10 +35,10 @@ The `SpaceServers` present to Basil the objects to display in space.
 
 Currently, this umbrella project contains the projects:
 
-[BasilJS]: a browser based version of `Basil`;
-[BasilG]: a [Godot] based application that implements `Basil`;
-[RaguOS]: a `SpaceServer` for [OpenSimulator] using region modules;
-[Espazote]: a `SpaceServer` for the [Project Athena] (open source of [High Fidelity])
+ [BasilJS]: a browser based version of `Basil`;
+ [BasilG]: a [Godot] based application that implements `Basil`;
+ [RaguOS]: a `SpaceServer` for [OpenSimulator] using region modules;
+ [Espazote]: a `SpaceServer` for the [Project Athena] (open source of [High Fidelity])
 
 News items on progress and releases are listed in the sidebar.
 Other places to go from here:

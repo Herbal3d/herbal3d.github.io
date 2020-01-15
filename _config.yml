@@ -18,7 +18,7 @@ permalink: /:year/:year-:month-:day-:title
 pageinate: 5
 
 highlighter: rouge
-markdown: karmdown
+markdown: kramdown
 gems:
     - jekyll-paginate
 encoding: utf-8

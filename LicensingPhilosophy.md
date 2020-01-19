@@ -44,3 +44,8 @@ Additionally, some reference designs of certain modules could
 have a more flexible license ([BSD License], [Apache License], [MIT License], ...) 
 but, in general, the core development should happen in a larger,
 public community.
+
+[BSD License]: http://opensource.org/licenses/BSD-3-Clause
+[MIT License]: http://opensource.org/licenses/MIT
+[Apache License]: http://opensource.org/licenses/Apache-2.0
+[Robert Adams]: https://misterblue.com/

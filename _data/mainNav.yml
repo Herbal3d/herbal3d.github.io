@@ -13,17 +13,17 @@
       label: Overview
       url: "/architecture/"
 
-    - name: spaceManager
-      label: Space Manager
-      url: "/architecture/SpaceManager.html"
+    - name: basil
+      label: Basil
+      url: "/architecture/Basil/"
 
-    - name: sessionManager
-      label: Session Manager
-      url: "/architecture/SessionManager.html"
+    - name: ragu
+      label: Ragu
+      url: "/architecture/Ragu/"
 
-    - name: basilRenderer
-      label: BasilRenderer
-      url: "/architecture/Basil.html"
+    - name: dill
+      label: Dill
+      url: "/architecture/Dill/"
 
 - name: progress
   label: Progress

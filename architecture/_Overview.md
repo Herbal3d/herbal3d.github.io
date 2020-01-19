@@ -512,3 +512,73 @@ described above.
 [Pesto]:  http://herbal3d.github.io/pesto/
 [Loc-Loc]: http://herbal3d.github.io/loc-loc/
 [Ragu]: http://herbal3d.github.io/ragu/
+===============================================================
+`Basil` is the general name for the "viewer". Basil contains no
+"world logic" -- its only job is displaying the 3d objects for
+a viewer. So, if the viewing implementation is a head mounted display,
+that version of Basil will worry about the correct display as
+the viewer's head moves, etc. If the viewing implementation is
+a desktop computer screen, that Basil version would implement
+the screen display.
+
+All versions of Basil are controlled through a common protocol API.
+Basil is essentually a slave process that is told what to display
+by multiple `SpaceServers`.
+Basil essentually merges the view from multiple SpaceServers.
+To do this, SpaceServers must share a coordinate space.
+The model used by Herbal3d is a planetary system that defaults
+to Earth and is based on the World Geodetic System [WGS84].
+
+The merging of the contents of multiple SpaceServers is loosely
+called merging `layers`. So if the Basil viewer is an augmented reality
+headset viewing a street scene, the "layers" could be
+the street location information from the municipal servers,
+the traffic information from the city's traffic control,
+the information from the surrounding businesses.
+These "layers" are merged into a single view of the scene.
+
+See the [Use Cases] for more complete descriptions of possible
+configurations of systems that could use the Herbal3d architecture.
+The use cases described include
+augmented reality goggles,
+virtual world 3d goggles,
+3d views of virtual worlds in browsers,
+and 
+a merged 3d view into multiple virtual worlds.
+
+Since the Basil viewer has no world logic, the user interface
+is implemented by one or more "UI Servers".
+Additionally, the whole session is managed by a "Session Manager".
+These run externally to the Basil viewer and present more
+layers to the viewer's view.
+
+## Block Diagram
+
+This block  diagram is an idealized view of a complete renderer.
+
+# Philosophy
+
+The Basil viewer system presents a rendered view of objects in a 3D space.
+The objects can represent things in the real world or in a virtual world.
+The viewer system is extensible and can accommodate new object spaces by the
+addition of modules.
+
+The modules are defined by their functionality, interface, and, optionally, by
+the protocol to communicate with the module. The relationship between modules
+and where they run (some computer, different computer, same address space, ...)
+is not defined so many operational configurations are possible -- it depends on
+what is best for the specific function provided by the module.
+
+Basil tries to keep functionality separate preferring to define single function
+modules that communicate through an API rather than conflating functionality into
+one module. Thought should always be given to where new functionality should be
+added. For instance, animation functionality is often added to a renderer because
+of needed interactions between the animation computation and the frame update
+timing. Architecturally, though, it would be better to add to the renderer
+the ability to add inter-frame computation modules and then add animation, bones,
+etc as separate functional modules. This extended the renderer with its needed
+functionality and doesn't embed specific additional functions into the renderer.
+
+The initial implementation is in JavaScript but that is not required.
+Future module implementations can be in any programming language as long as
+the API interfaces are kept.

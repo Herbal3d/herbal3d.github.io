@@ -45,7 +45,8 @@ Other places to go from here:
 
 * [Architectural Overview]
 * [News]
-* [Basil Protocol Definition]
+* [Basil Architecture]
+* [Basil Authentication]
 * [Basil Issues]
 * [Basil Sources]
 
@@ -66,14 +67,16 @@ described above.
 [OpenSimulator]: http://opensimulator.org/
 [BasilJS]: https://github.com/Herbal3d/basil/tree/master/Basiljs 
 [BasilG]: https://github.com/Herbal3d/basil/tree/master/Basilg 
-[Loc-Loc]: https://herbal3d.github.io/loc-loc/
-[RaguOS]: https://herbal3d.github.io/ragu/
-[Ragu]: https://herbal3d.github.io/ragu/
-[Espazote]: https://herbal3d.github.io/espazote/
+[Loc-Loc]: {{ "architecture/Loc-loc/" | prepend: site.baseurl }}
+[RaguOS]: {{ "architecture/Ragu/" | prepend: site.baseurl }}
+[Ragu]: {{ "architecture/Ragu/" | prepend: site.baseurl }}
+[Dill]: {{ "architecture/Dill/" | prepend: site.baseurl }}
 [Project Athena]: https://projectathena.io/
 [High Fidelity]: https://www.highfidelity.com/
-[Architectural Overview]: https://herbal3d.github.io/architecture/Overview.html
-[News]: https://herbal3d.github.io/News.html
+[Architectural Overview]: {{ "/architecture/" | prepend: site.baseurl }}
+[News]: {{ "News.html" | prepend: site.baseurl }}
+[Basil Architecture]: {{ "architecture/Basil/" | prepend: site.baseurl }}
+[Basil Authentication]: {{ "architecture/Basil/Authentication.html" | prepend: site.baseurl }}
 [Basil Issues]: https://github.com/Herbal3d/basil/issues
 [Basil Sources]: https://github.com/Herbal3d/basil
 [Robert Adams]: https://misterblue.com/

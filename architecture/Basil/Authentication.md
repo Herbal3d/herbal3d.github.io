@@ -59,7 +59,6 @@ passed in the `SpaceServer.OpenConnection()` request will have the contents:
         "SessionKey": "01234567890123456789",
         "Auth": "012345678901234567890123456789",
         "ClientAuth": "012345678900123456789"
-        "ClientAuthExpiration": "2020-07-12T12:13:14Z"
     }
 }
 ```
@@ -78,8 +77,6 @@ The properties are coded as:
     "SessionKey": "01234567890123456789",
     "ConnectionKey": "65656565656565656",
     "SessionAuth": "98765432109876543210987654321",
-    "SessionAuthExpiration": "2020-07-12T12:13:14Z",
-    "Services": "[ { "Name": "ServiceName", "Url": "ServiceURL", "Auth": "989898", "AuthExpiration": "2020-07-12T12:13:14Z" } ]"
 }
 ```
 
@@ -111,14 +108,12 @@ The properties sent in the `MakeConnection()` request will include at least:
 "Properties": {
     "Service": "SpaceServer",
     "TransportURL": "ServiceConnectionURL",
-    "ServiceAuth": "{ "Name": "ServiceName", "Url": "ServiceConnectionURL", "Auth": "7878787", "AuthExpiration": "2020-07-12T12:13:14Z" }"
+    "ServiceAuth": "9872039847983723974"
 }
 ```
 
-where `ServiceAuth` contains the authorization information that is returned by Basil in
+where `ServiceAuth` contains the authorization token that is returned by Basil in
 the requests to the service.
-Note that `ServiceAuth` is in the same JSON string format as `Services` in `SpaceServer.OpenSession()`
-response.
 
 The handshake is:
 

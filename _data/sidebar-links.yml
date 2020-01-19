@@ -2,15 +2,10 @@
 # 'label' is displayed text in the 'a' anchor.
 # 'hoverText" is the 'alt' and, of course, 'url' is the target
 
-- name: OpenSimulator
-  label: OpenSimulator
-  hoverText: Virtual world simulator similar to SecondLife(r)
-  url: http://opensimulator.org/
-
-- name: Pesto
-  label: Pesto
-  hoverText: Basil viewer session manager
-  url: https://herbal3d.github.io/architecture/Pesto
+- name: Basil
+  label: Basil
+  hoverText: Basil Architecture
+  url: {{ "/architecture/Basil/" | prepend: site.baseurl }}
 
 - name: Ragu
   label: Ragu
@@ -21,3 +16,9 @@
   label: loc-loc
   hoverText: Space server lookup service
   url: https://herbal3d.github.io/architecture/loc-loc
+
+- name: OpenSimulator
+  label: OpenSimulator
+  hoverText: Virtual world simulator similar to SecondLife(r)
+  url: http://opensimulator.org/
+

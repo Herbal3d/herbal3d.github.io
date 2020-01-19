@@ -43,17 +43,17 @@ The `SpaceServers` present to Basil the objects to display in space.
 News items on progress and releases are listed in the sidebar.
 Other places to go from here:
 
-* [Architectural Overview]
-* [News]
-* [Basil Architecture]
-* [Basil Authentication]
+* [Architectural Overview]( {{ "/architecture/" | prepend: site.baseurl }} )
+* [News and Updates]( {{ "News.html" | prepend: site.baseurl }} )
+* [Basil Architecture]( {{ "/architecture/Basil/" | prepend: site.baseurl }} )
+* [Basil Authentication]( {{ "architecture/Basil/Authentication.html" | prepend: site.baseurl }} )
 * [Basil Issues]
 * [Basil Sources]
 
 Other topics:
 
-* [Licensing Philosophy]
-* [The Herbal Names]
+* [Licensing Philosophy]( {{ "/LicensingPhilosophy.html" | prepend: site.baseurl }} )
+* [The Herbal Names]( {{ "/HerbalNames.html" | prepend: site.baseurl }} )
 
 ## Legal Stuff
 
@@ -67,16 +67,12 @@ described above.
 [OpenSimulator]: http://opensimulator.org/
 [BasilJS]: https://github.com/Herbal3d/basil/tree/master/Basiljs 
 [BasilG]: https://github.com/Herbal3d/basil/tree/master/Basilg 
-[Loc-Loc]: {{ "architecture/Loc-loc/" | prepend: site.baseurl }}
-[RaguOS]: {{ "architecture/Ragu/" | prepend: site.baseurl }}
-[Ragu]: {{ "architecture/Ragu/" | prepend: site.baseurl }}
-[Dill]: {{ "architecture/Dill/" | prepend: site.baseurl }}
+[Loc-Loc]: {{ "/architecture/Loc-loc/" | prepend: site.baseurl }}
+[RaguOS]: {{ "/architecture/Ragu/" | prepend: site.baseurl }}
+[Ragu]: {{ "/architecture/Ragu/" | prepend: site.baseurl }}
+[Dill]: {{ "/architecture/Dill/" | prepend: site.baseurl }}
 [Project Athena]: https://projectathena.io/
 [High Fidelity]: https://www.highfidelity.com/
-[Architectural Overview]: {{ "/architecture/" | prepend: site.baseurl }}
-[News]: {{ "News.html" | prepend: site.baseurl }}
-[Basil Architecture]: {{ "architecture/Basil/" | prepend: site.baseurl }}
-[Basil Authentication]: {{ "architecture/Basil/Authentication.html" | prepend: site.baseurl }}
 [Basil Issues]: https://github.com/Herbal3d/basil/issues
 [Basil Sources]: https://github.com/Herbal3d/basil
 [Robert Adams]: https://misterblue.com/
@@ -84,5 +80,3 @@ described above.
 [MIT License]: http://opensource.org/licenses/MIT
 [Apache License]: http://opensource.org/licenses/Apache-2.0
 [Creative Commons Attribution-NonCommercial 4.0 International]: http://creativecommons.org/licenses/by-nc/4.0/
-[Licensing Philosophy]: ./LicensingPhilosophy.html
-[The Herbal Names]: ./HerbalNames.html

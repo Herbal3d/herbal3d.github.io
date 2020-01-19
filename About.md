@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About
-permalink: /about/
 navigation: about
 ---
 Herbal3d started as a personal experimental project to build a virtual world
@@ -17,4 +16,4 @@ Internet technologies.
 Started in 2015 by [Robert Adams], the Herbal3d project will hopefully grow
 into a large open source project.
 
-[Robert Adams]: http://misterblue.com/
+[Robert Adams]: https://misterblue.com/

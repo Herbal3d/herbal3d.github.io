@@ -6,7 +6,7 @@ title: "Herbal3D: Basil Architecture"
 # Basil Architecture
 
 The overall design of Basil is described in the
-[Basil section of the Architecture document]( {{ "/architecture/architecture.html#the-basil-viewer" | prepend: site.baseurl }} ).
+[Basil section of the Architecture document]( {{ "/architecture/index.html.html#the-basil-viewer" | prepend: site.baseurl }} ).
 The general architectural direction is a 3D version of the 2D [X Window System].
 An X11 Server takes connections from multiple clients and presents a
 model of 2d windows that contain text or graphics.
@@ -56,8 +56,8 @@ The default coordinate system is [WGS84] which is earth.
 For convenience, virtual worlds are mapped to some location on the planet earth.
 
 [X Window System]: https://en.wikipedia.org/wiki/X_Window_System
-[Basil Entity Design]: {{ "architecture/Basil/EntityDesign.html" | prepend: site.baseurl }}
-[Basil Authentication]: {{ "architecture/Basil/Authentication.html" | prepend: site.baseurl }}
+[Basil Entity Design]: {{ "/architecture/Basil/EntityDesign.html" | prepend: site.baseurl }}
+[Basil Authentication]: {{ "/architecture/Basil/Authentication.html" | prepend: site.baseurl }}
 [JWT]: https://jwt.io/
 [OAuth2]: https://oauth.net/2/
 [JWT RFC]: https://tools.ietf.org/html/rfc7519

@@ -45,7 +45,7 @@ This makes this a generally usable feature that should be considered for Basil.
 
 ADD MORE
 
-Basil's internal data model is described in the [Basil Entity Design] document.
+Basil's internal data model is described in the [Basil Item Design] document.
 
 Basil's authentication model and protocol is described in the [Basil Authentication] document.
 In general, the authentication/authorization system is opaque to Basil.
@@ -56,7 +56,7 @@ The default coordinate system is [WGS84] which is earth.
 For convenience, virtual worlds are mapped to some location on the planet earth.
 
 [X Window System]: https://en.wikipedia.org/wiki/X_Window_System
-[Basil Entity Design]: {{ "/architecture/Basil/EntityDesign.html" | prepend: site.baseurl }}
+[Basil Item Design]: {{ "/architecture/Basil/ItemDesign.html" | prepend: site.baseurl }}
 [Basil Authentication]: {{ "/architecture/Basil/Authentication.html" | prepend: site.baseurl }}
 [JWT]: https://jwt.io/
 [OAuth2]: https://oauth.net/2/

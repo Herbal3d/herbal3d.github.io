@@ -8,8 +8,9 @@ A thing that is created and managed within Basil is called an "item".
 An item can be most anything from a mesh representation to a UI element
 to a camera view.
 
-Items have a "type" which is their base functionality.
-To this base functionality is added `able`s. That is, a mesh item can
+Items are just identified containers that can be anything: meshes,
+animations, cameras.
+To the container, functionality is added as "able"`s. That is, a mesh item can
 be positionable, or animatable, or whatever-able.
 
 This is a riff on the [entity/component model] found in many game engines.
@@ -30,19 +31,44 @@ The base properties are:
 | _OwnerId | yes      | no       | Connection/service that created this BItem |
 | _State   | yes      | no       | One of "UNINITIALIZED", "LOADING", "FAILED", "READY", "SHUTDOWN" |
 | _Layer   | yes      | no       | String name of group this BItem belongs to |
+| _Unique  | yes      | no       | A unique item key supplied by the creator or generated if not |
 
 # ABLEs
 
 ## Displayable
 
-## Positionable
+This defines a displayable item. It usually is a MeshSet.
 
 | Property | Gettable | Settable | Desc |
 |--------- | -------- | -------- |----- |
-| _Position    | yes      | yes       | One of ?? |
-| _Rotation      | yes      | yes       | Unique string identifier for this BItem |
-| _PosCoordSystem | yes      | yes       | Connection/service that created this BItem |
-| _RotCoordSystem   | yes      | yes       | One of "UNINITIALIZED", "LOADING", "FAILED", "READY", "SHUTDOWN" |
+| DType    | yes      | no       | One of ?? |
+| AABB     | yes      | no       | axis aligned bounding box as "x,y,z,x,y,z" |
+
+Other properties depend on the value of "_DisplayableType":
+
+### MeshSet
+
+| URL      | yes      | no       | URL needed for loader |
+| LoaderType | yes    | no       | One of "GLTF", ?? |
+| AssetAuth  | yes    | yes      | token to use for fetching the asset |
+
+## Instanceable
+
+This ability represents an instance of a displayable in the 3d space.
+Often, there is a Displayable and Instanceable on a single item --
+the case where there is a single instance of the displayable asset
+in the 3d space. There could be a single Displayable item with
+many Instancable items that reference that displayable.
+In this latter case, there will not be Displayable properties
+in this item but, instead, a "DisplayableRef" property will be present.
+
+| Property | Gettable | Settable | Desc |
+|--------- | -------- | -------- |----- |
+| Pos      | yes      | yes      | Position as "x,y,z" |
+| Rot      | yes      | yes      | Rotation as "x,y,z,w" |
+| PosCoord | yes      | yes      | Coordinate system code for "Position" |
+| RotCoord | yes      | yes      | Coordinate system code for "Rotation" |
+| DisplayRef | yes    | no       | ID of item with Displayability if not present here |
 
 ## Trackingable
 

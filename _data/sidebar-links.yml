@@ -5,7 +5,7 @@
 - name: Basil
   label: Basil
   hoverText: Basil Architecture
-  url: {{ "/architecture/Basil/" | prepend: site.baseurl }}
+  url: https://herbal3d.github.io/architecture/Basil/
 
 - name: Ragu
   label: Ragu

@@ -2,11 +2,7 @@
 layout: default
 title: "Herbal3D: Virtual World Viewer Infrastructure"
 ---
-> "What brings you here, my child?"
-> <br>The scamp points and asks, "What is that?"
-> <br>"Ah. Curiosity. The best reason."
-
-NOTE: 20200118: Work in progress. Contact [the writer] with questions.
+NOTE: 20200423: Work in progress. Contact [the writer] with questions.
 
 Herbal3d is an umbrella project for the building of a virtual world
 and augmented reality viewer.
@@ -22,10 +18,10 @@ from multiple augmented reality systems in the same view.
 
 Currently, this umbrella project contains the projects:
 
-* BasilJS: a browser based version of `Basil`;
-* BasilG: a [Godot] based application that implements `Basil`;
-* RaguOS: a `SpaceServer` for [OpenSimulator] using region modules;
-* Dill: a `SpaceServer` for [Project Athena] (open source of [High Fidelity])
+* [BasilJS]: a browser based version of `Basil`;
+* [BasilG]: a [Godot] based application that implements `Basil`;
+* [RaguOS]: a `SpaceServer` for [OpenSimulator] using region modules;
+* [Dill]: a `SpaceServer` for [Vircadia] (open source of [High Fidelity])
 
 `Basil` is the viewer portion of this project.
 It simply displays 3D entities and UI features as instructed and
@@ -65,13 +61,13 @@ described above.
 
 [the writer]: mailto:herbal3d-w@misterblue.com
 [OpenSimulator]: http://opensimulator.org/
-[BasilJS]: https://github.com/Herbal3d/basil/tree/master/Basiljs 
-[BasilG]: https://github.com/Herbal3d/basil/tree/master/Basilg 
+[BasilJS]: https://github.com/Herbal3d/basil
+[BasilG]: https://github.com/Herbal3d/basilg
 [Loc-Loc]: {{ "/architecture/Loc-loc/" | prepend: site.baseurl }}
 [RaguOS]: {{ "/architecture/Ragu/" | prepend: site.baseurl }}
 [Ragu]: {{ "/architecture/Ragu/" | prepend: site.baseurl }}
 [Dill]: {{ "/architecture/Dill/" | prepend: site.baseurl }}
-[Project Athena]: https://projectathena.io/
+[Vircadia]: https://vircadia.com/
 [High Fidelity]: https://www.highfidelity.com/
 [Basil Issues]: https://github.com/Herbal3d/basil/issues
 [Basil Sources]: https://github.com/Herbal3d/basil

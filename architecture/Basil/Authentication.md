@@ -50,12 +50,12 @@ multiple SpaceServer services and can be used to group the multiple connections.
 
 The JSON encoded invocation parameter string also includes a `comm` section which
 gives the URL and service type for Basil to connect to. If the service is a
-SpaceServer, Basil will do a `SpaceServer.OpenConnection()` request. The "Auth" parameter
+SpaceServer, Basil will do a `SpaceServer.OpenConnection()` request. The "IProps" parameter
 passed in the `SpaceServer.OpenConnection()` request will have the contents:
 
 ```javascript
 {
-    "accessProperties": {
+    "IProps": {
         "SessionKey": "01234567890123456789",
         "Auth": "012345678901234567890123456789",
         "ClientAuth": "012345678900123456789"
@@ -82,19 +82,12 @@ The properties are coded as:
 
 where `SessionKey` is a replay of `SessionKey` from the invocation,
 `SessionAuth` is a new authorization token that Basil will return in future
-SpaceServer requests to authorize access,
-`SessionAuthExpiration` is the date when the `SessionAuth` token will expire.
+SpaceServer requests to authorize access.
 
 `SessionKey` identifies the Basil session while `ConnectionKey` is a unique identification
 for the communication connection initiated through the `SpaceServer.OpenConnection()`
 request. It can be used to manage flow control, authorization, and other communication
 requirements.
-
-`Services` is a JSON encoded string containing an array of one or more services that Basil
-may need to access for this session. For each service, if an authorization token is needed,
-it is supplied in an `Auth` and `AuthExpiration` value.
-
-Authorization expiration dates are UTC times coded as [RFC3339] date strings.
 
 ## MakeConnection
 
@@ -126,16 +119,8 @@ does not include any useful information other than an Exception of the connectio
 
 ## Server Request Authorization
 
-When accessing a server (BasilServer or SpaceServer), the request includes an 'auth'
-field which includes at least:
-
-```javascript
-"accessProperties": {
-    "Auth": "authorizationKey"
-}
-```
-
-This provides the authorization key for the request to the server.
+When accessing a server (BasilServer or SpaceServer), the request includes a 'SessionAuth'
+which is usually a JWT token.  This provides the authorization key for the request to the server.
 
 ## JWT Information
 

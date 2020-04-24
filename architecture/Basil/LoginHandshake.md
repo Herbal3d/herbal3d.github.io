@@ -83,17 +83,17 @@ InitialSpaceServer ---------------->      Basil
                     "transportURL": SpaceServer-A-ConnectionURL,
                     "transport": "WS",
                     "service": "BasilComm",
-                    "ServiceAuth": TokenForAccessingSpaceServerA
+                    "ServiceAuth": TokenForInitiallyAccessingSpaceServerA
                 }
             }
 
 SpaceServerA        <-------------------    Basil
             {
                 "Op": OpenSessionReq,
-                "SessionAuth": TokenForAccessingSpaceServerA
+                "SessionAuth": TokenForInitiallyAccessingSpaceServerA
                 "IProps": {
                     "ClientAuth": SS-A-AuthorizationTokenForTalkingBackToBasil,
-                    "SessionKey": SS-A-StringUniquifyingThisSession
+                    "SessionKey": SS-A-StringUniquifyingThisSession,
                     (more parameters describing Basil features)
                 }
             }
@@ -102,7 +102,10 @@ SpaceServerA        ---------------->      Basil
                 "Op": OpenSessionResp,
                 "SessionAuth": SS-A-AuthorizationTokenForTalkingBackToBasil,
                 "IProps": {
-                    (parameters describing SpaceServer features)
+                    "SessionAuth": TokenForAccessingSpaceServerA,
+                    "SessionKey": SS-A-StringUniquifyingThisSession,
+                    "ConnectionKey": StringUniqifyingThisConnection,
+                    (other parameters describing SpaceServer features)
                 }
             }
 

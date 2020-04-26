@@ -18,10 +18,10 @@ from multiple augmented reality systems in the same view.
 
 Currently, this umbrella project contains the projects:
 
-* [BasilJS]: a browser based version of `Basil`;
-* [BasilG]: a [Godot] based application that implements `Basil`;
-* [RaguOS]: a `SpaceServer` for [OpenSimulator] using region modules;
-* [Dill]: a `SpaceServer` for [Vircadia] (open source of [High Fidelity])
+* BasilJS: a browser based version of `Basil`;
+* BasilG: a [Godot] based application that implements `Basil`;
+* RaguOS: a `SpaceServer` for [OpenSimulator] using region modules;
+* Dill: a `SpaceServer` for [Vircadia] (open source of [High Fidelity])
 
 `Basil` is the viewer portion of this project.
 It simply displays 3D entities and UI features as instructed and

@@ -12,7 +12,7 @@ existing virtual world and augmented reality
 systems to a single view.
 This creates a single 3D view where an
 [OpenSimulator] avatar can stand next to and interact with a
-[Project Athena] avatar.
+[Vircadia] avatar.
 
 For augmented reality, one can look out into the
 real world and have a combined view of information from
@@ -275,7 +275,7 @@ described above.
 [^2]: a term coined from [Sirikata]
 
 [OpenSimulator]: http://opensimulator.org/
-[Project Athena]:
+[Vircadia]: https://vircadia.com/
 [X11 Server]: https://en.wikipedia.org/wiki/X_Window_System
 [Oculus]: http://www.oculus.com/
 [WGS84]: https://en.wikipedia.org/wiki/World_Geodetic_System
@@ -283,6 +283,3 @@ described above.
 [Use Cases]: {{ "/architecture/UseCases.html" | prepend: site.baseurl }}
 [Pesto]: http://misterblue.github.io/pesto/
 [Creative Commons Attribution-NonCommercial 4.0 International]: http://creativecommons.org/licenses/by-nc/4.0/
-
-<!-- vim: ts=2 sw=2 ai et spell
--->

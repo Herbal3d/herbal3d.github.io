@@ -2,7 +2,7 @@
 layout: default
 title: "Herbal3D: Virtual World Viewer Infrastructure"
 ---
-NOTE: 20200423: Work in progress. Contact [the writer] with questions.
+NOTE: 20220119: Work in progress. Contact [the writer] with questions.
 
 Herbal3d is an umbrella project for the building of a virtual world
 and augmented reality viewer.
@@ -19,9 +19,12 @@ from multiple augmented reality systems in the same view.
 Currently, this umbrella project contains the projects:
 
 * BasilJS: a browser based version of `Basil`;
-* BasilG: a [Godot] based application that implements `Basil`;
 * RaguOS: a `SpaceServer` for [OpenSimulator] using region modules;
-* Dill: a `SpaceServer` for [Vircadia] (open source of [High Fidelity])
+
+and, eventually, other projects mostly exploring viewer extensibility:
+
+* BasilG: a [Godot] based application that implements `Basil`;
+* BasilUE: a [Unreal Engine] based application that implements `Basil`;
 
 `Basil` is the viewer portion of this project.
 It simply displays 3D entities and UI features as instructed and
@@ -67,6 +70,7 @@ described above.
 [RaguOS]: {{ "/architecture/Ragu/" | prepend: site.baseurl }}
 [Ragu]: {{ "/architecture/Ragu/" | prepend: site.baseurl }}
 [Dill]: {{ "/architecture/Dill/" | prepend: site.baseurl }}
+[Unreal Engine]: https://www.unrealengine.com/en-US/ 
 [Vircadia]: https://vircadia.com/
 [High Fidelity]: https://www.highfidelity.com/
 [Basil Issues]: https://github.com/Herbal3d/basil/issues

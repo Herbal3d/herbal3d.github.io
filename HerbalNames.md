@@ -22,7 +22,7 @@ Green, leafy herbs are good for you and taste good too.
 * Cicely
 * Cilantro
 * Cress
-* ~~Dill~~: Project Athena space server
+* ~~Dill~~: Vircadia space server
 * Espazote
 * Jimbu
 * Lavender

@@ -2,7 +2,7 @@
 layout: default
 title: "Herbal3D: Virtual World Viewer Infrastructure"
 ---
-NOTE: 20220119: Work in progress. Contact [the writer] with questions.
+NOTE: Aug 18, 2022: This project is asleep and no work is being done.
 
 Herbal3d is an umbrella project for the building of a virtual world
 and augmented reality viewer.

@@ -33,15 +33,17 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 {% for navTab in site.data.mainNav %}
                     {% if navTab.submenu %}
+                        {%- capture dropdown-id %}nav-dropdown-{{ navTab.name }}{% endcapture -%}
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle"
+                                        id="{{ dropdown-id }}"
                                         role="button"
                                         data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                {{ navTab.label }} 
                                <span class="caret"></span>
                             </a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu" aria-labelledby="{{ dropdown-id }}">
                                 {% for dropTab in navTab.submenu %}
                                     <li class="dropdown-item">
                                         <a href="{{ dropTab.url | prepend: site.baseurl }}">
